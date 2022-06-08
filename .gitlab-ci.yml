@@ -3,7 +3,9 @@ stages:
 
 always-run:
   stage: test
-  script: echo 'this should always run'
+  script: 
+    - echo 'this should always run'
+    - env
 
 on-pull-requests:
   stage: test
